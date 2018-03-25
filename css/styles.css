@@ -1,26 +1,98 @@
-h1 {
-    color: blueviolet;
+/* la balise * est utilisé pour prendre la totalité du index.html */
+
+/* font-size = taille du texte */
+/* font-family = police de caractère (google fonts) */
+/* font-style = mettre en italic ou normal */
+/* font-weight = mettre en bold */
+
+/* text-decoration: underline = souligner */
+/* text-decoration: overline = mettre une ligne au-dessus */
+/* text-decoration: line-through = barrer le texte */
+
+/* text-align (justify, left, right ou center) = alignement du texte */
+
+p {
+    font-size: 14px;
+    font-family: Arial, Verdana, sans-serif;
+    font-style: normal;
     font-weight: bold;
-    line-height: normal;
+    text-align: left;
 }
+
+/* float = permet l'imbrication parfaite de l'image dans le texte */
+.flottant {
+    float: left;
+}
+
+/* si l'on souhaite qu'un paragraphe n'ai pas l'imbrication de l'image, on doit mettre une class dans le <p> du html et noter cette class dans le css avec comme commande clear: (position du flottement : left, right ou both).
+Exemple: .autreparagraphe { clear: left; } */
+
+h1 { 
+    text-align: center;
+    color: royalblue;
+    background-color: antiquewhite;
+    opacity: 0,6;
+}
+
+/* créer une transparence avec opacity (valeur comprise entre 0 et 1) */
+/* créer une transparence avec color: rgba (255, 0, 1, 0,5) */
+
+* {background-color: skyblue;
+}
+
+/* Sur le texte de la balise <mark> du html, si par exemple on note mark { background-color: red} c'est uniquement la partie entre la balise <mark> qui sera prise en compte */
+
+/* Background-attachment permet de « fixer » le fond. L'effet obtenu est intéressant car on voit alors le texte « glisser » par-dessus le fond. Deux valeurs sont disponibles :
+
+fixed: l'image de fond reste fixe ;
+scroll: l'image de fond défile avec le texte (par défaut). */
+
+/* Par défaut, l'image de fond est répétée en mosaïque. Vous pouvez changer cela avec la propriété background-repeat:
+
+no-repeat: le fond ne sera pas répété. L'image sera unique sur la page.
+repeat-x: le fond sera répété uniquement sur la première ligne, horizontalement.
+repeat-y: le fond sera répété uniquement sur la première colonne, verticalement.
+repeat: le fond sera répété en mosaïque (par défaut). */
+
+/* background-position permet le placement du fond ou de l'image(top, bottom, left, right ou center) 
+exemple : 
+body
+{
+    background-image: url("soleil.png");
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-position: top right; } 
+ ou 
+
+body
+{
+    background: url("soleil.png") fixed no-repeat top right; }
+*/
 
 h2 {
-    
-    line-height: 15px;
-
-}
-p {
-    color: green;
-
+    border: 2px blue solid;
+    text-align: center;
+    border-radius: 15px; /* bord du cadre arrondi */
+    box-shadow: 3px 3px 3px grey; /* ombre au cadre */
 }
 
-.introduction {
-    
-    color: red;
-}
+/* type de bordure possible :
+    solid = cadre continu
+    dotted = cadre en pointillé
+    dashed = cadre en trait discontinu
+    double = cadre double trait 
+    groove: en relief ;
+    ridge: autre effet relief ;
+    inset: effet 3D global enfoncé ;
+    outset: effet 3D global surélevé
+*/
 
-.insertion {
-    color: greenyellow;
+h1 { text-shadow: 2px 2px 2px black; /* ombre au texte */
 }
+   
 
-/* la balise * est utilisé pour prendre la totalité du index.html */
+
+
+
+
+
