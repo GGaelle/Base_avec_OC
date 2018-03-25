@@ -1,0 +1,26 @@
+h1 {
+    color: blueviolet;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h2 {
+    
+    line-height: 15px;
+
+}
+p {
+    color: green;
+
+}
+
+.introduction {
+    
+    color: red;
+}
+
+.insertion {
+    color: greenyellow;
+}
+
+/* la balise * est utilisé pour prendre la totalité du index.html */

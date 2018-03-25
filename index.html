@@ -2,20 +2,23 @@
 <head>
     <meta charset="UTF-8">
     
+    <link rel="stylesheet" href="css/styles.css">
     <title>Test OC</title>
+    
     </head>
 
    
    <body>
        <h1>Apprendre le codage</h1>
-           <p>Bonjour et bienvenue sur ma nouvelle page pour renforcer mon html. Voici un paragraphe pour apprendre le html.</p>
+           <p class="introduction">Bonjour et bienvenue sur ma nouvelle page pour renforcer mon html. Voici un paragraphe pour apprendre le html.</p> <!-- le class= permet d'indiquer après dans le css une partie particulière avec .introduction -->
 
 <!-- créer des liens pour accéder directement aux différents chapitres -->                      
            <p>Aller directement à la partie traitant de :<br>
                <a href="#languages">Les différents languages</a><br>
                  <a href="#HTML">Le HTML</a><br>
                  <a href="#mail">Nous contacter</a><br>
-                 <a href="#download">Téléchargement</a>
+                 <a href="#download">Téléchargement</a><br>
+                 <a href="#curriculum">Curriculum Vitae</a>
            </p>
 
 <!-- Languages avec le lien id qui correspond au lien d'accès du chapitre -->                      
@@ -42,7 +45,26 @@
 <!-- lien pour télécharger un fichier .zip qui doit être présent dans le dossier -->
         <h2 id="download">Téléchargement</h2>
         <p>Vous pouvez télécharger le logo du club <a href="logo_HBCL.zip">ici</a> !</p>
-   
+        
+<!-- insertion image gif (animation), png (illustration) et jpeg (photos) avec un lien vers l'image plus grande -->
+  <p>Voici le logo du club de hand de Luçon que j'ai remis à jour à partir de l'ancien.
+        <a href="images/logo_HBCL.jpg"><img src="images/logo_HBCL_mini.jpg" alt="logo du HBCL"></a>
+                  </p>
+                
                    
+<!-- insertion de figure -->
+   <figure>
+       <img src="images/blocnotes.png" alt="Bloc-Notes">
+       <figcaption>Le logiciel Bloc-notes</figcaption> <!-- sous-titre qui se place sous l'illustration -->
+       </figure>
+       
+ <!-- insertion d'un autre fichier html s'ouvrant dans un autre onglet -->
+         <h2 id="curriculum">Curriculum Vitae</h2>
+         <p>Vous pourrez trouver mon Curriculum Vitae <a href="CV.html" title="Curriculum Vitae de GG" target="_blank">ici</a>.</p>     
+  
+  <!-- insertion de div (se met n'importe où) et span (s'insère dans un paragraphe)  : cela permet de mettre une class ou un id pour après le référencer dans le css -->
+      <div>Texte</div>
+      <p>J'insère le span dans mon texte pour lui permettre d'être référencer et lui donner <span class="insertion">un style dans le css</span> après.</p>
+  
     </body>
 </html>
